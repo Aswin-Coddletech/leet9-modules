@@ -1,7 +1,7 @@
 import { Schema } from 'mongoose';
 import { FastifyRequest } from 'fastify';
 
-interface CustomHeaders {
+export interface CustomHeaders {
   // Define your custom header properties here
   'x-access-token': string;
 }
@@ -72,6 +72,8 @@ export interface ISocialMedia {
   name: string;
   connected: boolean;
   rewarded: boolean;
+  email: string;
+  token: string;
 }
 
 export interface IWallets {
